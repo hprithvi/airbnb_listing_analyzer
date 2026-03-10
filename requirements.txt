@@ -1,0 +1,15 @@
+httpx
+playwright
+python-dotenv
+psycopg2-binary
+scikit-learn
+pandas
+numpy
+streamlit
+folium
+streamlit-folium
+plotly
+schedule
+geopy
+fake-useragent
+joblib
