@@ -1,11 +1,16 @@
 import sys
-sys.path.insert(0, '..')
+#sys.path.insert(0, '..')
 
 import pandas as pd
 import matplotlib.pyplot as plt
 from db.database import init_db, fetch_all
 
-init_db()
+#init_db()
+
+import streamlit as st
+from sqlalchemy import create_engine
+
+engine = create_engine(st.secrets["DATABASE_URL"])
 
 # Load listings
 rows = fetch_all('SELECT * FROM listings')
